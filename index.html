@@ -1,29 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Juego de Predicción de Cartas</title>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <h1>Mayor o Menor</h1>
-    <p id="best-score">Mejor puntuación: 0</p>
-    <button id="start-game">Iniciar Juego</button>
-    <button id="stop-game" style="display: none">Detener Juego</button>
-    <div id="loading-indicator" style="display: none;">Cargando...</div>
-    <div id="game-area" style="display: none">
-      <p id="score">Puntos: 0</p>
-      <p id="remaining">Cartas restantes: 52</p>
-      <img id="current-card" src="" alt="Carta actual" />
-      <br />
-      <button id="higher">Mayor</button>
-      <button id="lower">Menor</button>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor o Menor - Juego de Cartas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>♠️ Mayor o Menor ♥️</h1>
+        <div class="best-score">🏆 Mejor Puntuación: <span id="bestScore">0</span></div>
+    </header>
+
+    <div class="controls">
+        <button id="startBtn" class="btn-start">Iniciar Juego</button>
+        <button id="stopBtn" class="btn-stop hidden">Detener Juego</button>
     </div>
-    <div id="statsContainer">
-      <canvas id="statsChart"></canvas>
+
+    <div id="gameArea" class="game-container hidden">
+        <div class="game-stats">
+            <div class="stat-item">
+                <div class="stat-label">Puntos</div>
+                <div class="stat-value" id="score">0</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-label">Cartas</div>
+                <div class="stat-value" id="remaining">52</div>
+            </div>
+        </div>
+
+        <div class="card-display">
+            <img id="currentCard" class="card-image" src="" alt="Carta actual">
+        </div>
+
+        <div class="game-actions">
+            <button id="higherBtn" class="btn-action">⬆️ Mayor</button>
+            <button id="lowerBtn" class="btn-action">⬇️ Menor</button>
+        </div>
     </div>
+
+    <div id="chartContainer" class="chart-container hidden">
+        <h2 style="text-align: center; margin-bottom: 20px; color: #f39c12;">📊 Estadísticas del Juego</h2>
+        <div class="chart-wrapper">
+            <canvas id="statsChart"></canvas>
+        </div>
+    </div>
+
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+    </div>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
