@@ -88,7 +88,7 @@ Abre un Pull Request y estaré encantado de revisarlo.
 **[David Rodriguez ferrete]**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white)](https://github.com/drodriguezf-dev)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)]([https://linkedin.com/in/david-rodriguez-ferrete](https://www.linkedin.com/in/david-rodriguez-ferrete-b97a1034a/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/david-rodriguez-ferrete-b97a1034a/)
 
 ---
 
